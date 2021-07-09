@@ -1,0 +1,28 @@
+#circle {
+  animation: dash ease-in-out 1.5s infinite;
+}
+
+svg {
+  animation: rotate ease-in-out 2.5s infinite;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1 63;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 40 63;
+    stroke-dashoffset: -23;
+  }
+  100% {
+    stroke-dasharray: 2 61;
+    stroke-dashoffset: -61;
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
